@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h4>Thank you for your order!</h4>
+    <hr>
+    <ul>
+      <% @items.each do |item| %>
+        <li><%= Product.find(item[:product_id]).name %> × <%= item[:quantity] %></li>
+      <% end %>
+    </ul>
+    <br>
+    <p>Total: <%= @total %></p>
+  </body>
+</html>
