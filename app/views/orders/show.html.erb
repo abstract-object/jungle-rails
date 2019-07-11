@@ -27,7 +27,7 @@
           TOTAL:
         </th>
         <th>
-          <%= @items.map {|item| item[:product].price_cents * item[:quantity]}.sum / 100.0 %>
+          <%= @order.total %>
         </th>
       </tr>
     </tfoot>
