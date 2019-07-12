@@ -134,3 +134,7 @@ cat3.products.create!({
 
 
 puts "DONE!"
+
+## REVIEWS
+
+pro1 = Product.find(3)
